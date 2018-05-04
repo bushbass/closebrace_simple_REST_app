@@ -7,7 +7,7 @@ var DATABASE_URL = require('./config/db')
 // Database
 var mongo = require('mongodb')
 var monk = require('monk')
-var db = monk(DATABASE_URL)
+var db = monk(process.env.DATABASE_URL)
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
