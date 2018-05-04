@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var DATABASE_URL = require('./config/db')
+// var DATABASE_URL = require('./config/db')
 // Database
 var mongo = require('mongodb')
 var monk = require('monk')
